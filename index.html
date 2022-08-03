@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Offline</title>
+</head>
+<body>
+    <header><h1>Clique no que deseja calcular:</h1></header>
+<Section class="alinhamento">
+    <button type="button" class="container">1- Calcular velocidade média ⋁m</button>
+    <div class="content">
+        <p><input type="number" id="dist" placeholder="Distância percorrida (km)"> </p>
+        <p><input type="number" id="hora" placeholder="Tempo demandado (horas)"> </p>
+        <p><input type="text" id="resposta" readonly="readonly" placeholder="Resposta:"> </p>
+        <p class="calcular"><button onclick="velmed()">Calcular</button> <button onclick="limpar()">Limpar</button></p>
+    </div>
+
+    <button type="button" class="container">2- Calcular área de uma circunferência ○</button>
+    <div class="content">
+        <p><input type="number" id="raio" placeholder="Raio da circunferência (metros)"> </p>
+        <p><input type="text" id="resposta2" readonly="readonly" placeholder="Resposta:"> </p>
+        <p class="calcular"><button onclick="arcir()">Calcular</button> <button onclick="limpar2()">Limpar</button></p>
+    </div>
+
+    <button type="button" class="container">3- Calcular área do quadrado □</button>
+    <div class="content">
+        <p><input type="number" id="area" placeholder="Medida de um lado (metros)"> </p>
+        <p><input type="text" id="resposta3" readonly="readonly" placeholder="Resposta:"> </p>
+        <p class="calcular"><button onclick="arqua()">Calcular</button> <button onclick="limpar3()">Limpar</button></p>
+    </div>
+
+    <button type="button" class="container">4- Área do Retângulo ▭</button>
+    <div class="content">
+        <p><input type="number" id="base" placeholder="Medida da base (metros)"> </p>
+        <p><input type="number" id="altura" placeholder="Medida da altura (metros)"> </p>
+        <p><input type="text" id="resposta4" readonly="readonly" placeholder="Resposta:"> </p>
+        <p class="calcular"><button onclick="arret()">Calcular</button> <button onclick="limpar4()">Limpar</button></p>
+    </div>
+
+    <button type="button" class="container">5- Valor de desconto de um produto &#37;</button>
+    <div class="content">
+        <p><input type="number" id="valor" placeholder="Valor do produto (R$)"> </p>
+        <p><input type="number" id="porc" placeholder="Porcentagem de desconto"> %</p>
+        <p><input type="text" id="resposta5" readonly="readonly" placeholder="Resposta:"> </p>
+        <p><input type="text" id="resposta6" readonly="readonly" placeholder="Resposta:"> </p>
+        <p class="calcular"><button onclick="valdesc()">Calcular</button> <button onclick="limpar5()">Limpar</button></p>
+    </div>
+</Section>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
